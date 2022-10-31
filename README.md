@@ -15,12 +15,12 @@ Original App Design Project - README Template
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
-- **Category:**
+- **Category: Utilities**
 - **Mobile:**
 - **Story:**
-- **Market:**
-- **Habit:**
-- **Scope:**
+- **Market: Everyday user, agricultural**
+- **Habit: Lifestyle**
+- **Scope: **
 
 ## Product Spec
 
@@ -28,39 +28,50 @@ Original App Design Project - README Template
 
 **Required Must-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* Users can LogIn
+* Users can SignUp
+* Users LogOut
+* Users can input a zipcode
+* users can see the current weather, forecast, heat index, times
+* user can change the settings change zip, forecast, etc
+* users can see a list of cities and their forecast
 
 **Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* users can search using city names or zipcode
+* add a map 
+* animated background for detail page
 
 ### 2. Screen Archetypes
 
-* [list first screen here]
+* Login
    * [list associated required story here]
    * ...
-* [list second screen here]
+* Detail
+   * 
+* Stream
    * [list associated required story here]
    * ...
+* Settings
+   * 
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Local detailed Weather
+* List of cities around
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
+* Login 
    * [list screen navigation here]
    * ...
-* [list second screen here]
+* Detailed local weather screen
    * [list screen navigation here]
    * ...
+* List of cities
+* Detailed city weather 
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]

@@ -4,23 +4,28 @@ Original App Design Project - README Template
 # APP_NAME_HERE
 
 ## Table of Contents
+
 1. [Overview](#Overview)
-1. [Product Spec](#Product-Spec)
-1. [Wireframes](#Wireframes)
-2. [Schema](#Schema)
+2. [Product Spec](#Product-Spec)
+3. [Wireframes](#Wireframes)
+4. [Schema](#Schema)
 
 ## Overview
+
 ### Description
+
 [Description of your app]
 
 ### App Evaluation
+
 [Evaluation of your app across the following attributes]
-- **Category: Utilities**
-- **Mobile:**
-- **Story:**
-- **Market: Everyday user, agricultural**
-- **Habit: Lifestyle**
-- **Scope: **
+
+- **Category: Utilities/Lifestyle**
+- **Mobile: This app will be developed exclusively for apple mobile devices**
+- **Story: The users will be able to see detailed weather and forecast information for a city of their choice (based on zip code) the user will be also able to scroll through a list of cities and see the weather information and forecast for each city**
+- **Market: Any user will be able to use this app**
+- **Habit: There is no restrictions for the app usage. The user will be able to access it at any time and change the zip code at any time**
+- **Scope: The app will start simple. We want to focus on the app being able to display accurate data for one zip code. Eventually we could expand and a map, a radar and even have live location services**
 
 ## Product Spec
 
@@ -28,52 +33,53 @@ Original App Design Project - README Template
 
 **Required Must-have Stories**
 
-* Users can LogIn
-* Users can SignUp
-* Users LogOut
-* Users can input a zipcode
-* users can see the current weather, forecast, heat index, times
-* user can change the settings change zip, forecast, etc
-* users can see a list of cities and their forecast
+- Users can logIn
+- Users can signUp
+- Users LogOut
+- Users can input a zip code
+- users can see the current weather, forecast, heat index, times
+- user can change the settings change zip, forecast, etc
+- users can see a list of cities and their forecast
 
 **Optional Nice-to-have Stories**
 
-* users can search using city names or zipcode
-* add a map 
-* animated background for detail page
+- users can search using city names or zip code
+- add a map
+- map tracks the user
+- animated background for detail page
 
 ### 2. Screen Archetypes
 
-* Login
-   * [list associated required story here]
-   * ...
-* Detail
-   * 
-* Stream
-   * [list associated required story here]
-   * ...
-* Settings
-   * 
+- Login
+  - Users can logIn
+  - Users can signUp
+  - Users can input a zip code
+
+- Detail
+  - Users can see the current weather, forecast, heat index, times
+  - Users LogOut
+
+- Stream
+  - users can see a list of cities and their forecast
+
+- Settings
+  - user can change the settings change zip, forecast, etc
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-* Local detailed Weather
-* List of cities around
+- Local detailed Weather
+- List of major cities and their weather
+- Settings
 
 **Flow Navigation** (Screen to Screen)
 
-* Login 
-   * [list screen navigation here]
-   * ...
-* Detailed local weather screen
-   * [list screen navigation here]
-   * ...
-* List of cities
-* Detailed city weather 
+- Forced Login -> Account creation if log in information is not available.
+- Settings -> User will be able to change settings
 
 ## Wireframes
+
 [Add picture of your hand sketched wireframes in this section]
 <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
 
@@ -81,11 +87,16 @@ Original App Design Project - README Template
 
 ### [BONUS] Interactive Prototype
 
-## Schema 
+## Schema
+
 [This section will be completed in Unit 9]
+
 ### Models
+
 [Add table of models]
+
 ### Networking
+
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]

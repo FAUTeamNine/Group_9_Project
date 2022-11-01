@@ -15,6 +15,7 @@ Original App Design Project - README Template
 ### Description
 
 [Description of your app]
+- A mobile weather app that will allow you to check a detailed forecast of any zipcode, along with supplying a list of simplified forecasts for zipcodes neighboring you
 
 ### App Evaluation
 

@@ -82,7 +82,7 @@ Original App Design Project - README Template
 ## Wireframes
 
 [Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="IMG_0204.jpeg" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 

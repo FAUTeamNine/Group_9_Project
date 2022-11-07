@@ -102,16 +102,57 @@ Original App Design Project - README Template
    | longitude     | Pointer to y-coordinate | y-coordinate of user's zipcode |
 
 ### Networking
-- Login/Sign-up screen
-      - (Create/POST) Create new user using username, password and zipcode
-      - (Read/GET) Query longitude and latitude based on user's zipcode
-- Home Screen
+#### List of network requests by screen
+ - Sign-Up Screen
+      - (Create/Post) Create new user using username, password and zipcode
+         ```swift
+        let user = PFUser()
+        user.username = usernameField.text
+        user.password = passwordField.text
+        user.zipcode = zipcodeField.text
+        user.signUpInBackground { (success, error) in
+            if success {
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            } else {
+                print("Error:\(error!.localizedDescription)")
+            }
+        }
+         ```
+ - Login Screen
+      - (Update/PUT) input user information to login
+         ```swift
+        user.username = usernameField.text!
+        user.password = passwordField.text!
+        PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
+            if user != nil {
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            } else {
+                print("Error:\(error!.localizedDescription)")
+                
+            }
+        }
+         ``` 
+ - Home Screen
       - (Read/GET) Query current forecast of the user's zipcode
       - (Read/GET) Query 5-day local forecast
-- Map Screen
+ - Map Screen
       - (Read/GET) Query weather for local major cities
-- Settings Screen
+ - Settings Screen
       - (Update/PUT) Change user's zipcode
+        ```swift
+        let user = PFUser()
+        user.zipcode = zipcode.text
+        PFUser.changeZipCode { (success, error) in
+        // check if zip code is valid or not
+            if success {
+                self.performSegue(withIdentifier: "zipCodeChangeSegue", sender: nil)
+                // will segue to main screen upon success with forecast of the given zipcode
+            } else {
+                print("Error, invalid zipcode:\(error!.localizedDescription)")
+                // will print an error and allow to enter a correct zip code
+            }
+        }
+         ``` 
       - (Update/PUT) Change preferred degree scale, either Celsius or Fahrenheit
 
 - [OPTIONAL: List endpoints if using existing API such as Yelp]

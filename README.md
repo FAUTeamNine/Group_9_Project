@@ -88,15 +88,90 @@ Original App Design Project - README Template
 ### [BONUS] Interactive Prototype
 
 ## Schema
-
-[This section will be completed in Unit 9]
-
 ### Models
+#### User 
 
-[Add table of models]
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | username      | string   | username to login |
+   | password      | string   | password to login |
+   | latitude      | Pointer to x-coordinate | x-coordinate of user's zipcode |
+   | longitude     | Pointer to y-coordinate | y-coordinate of user's zipcode |
 
 ### Networking
+#### List of network requests by screen
+ - Sign-Up Screen
+      - (Create/Post) Create new user using username, password and zipcode
+         ```swift
+        let user = PFUser()
+        user.username = usernameField.text
+        user.password = passwordField.text
+        user.zipcode = zipcodeField.text
+        user.signUpInBackground { (success, error) in
+            if success {
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            } else {
+                print("Error:\(error!.localizedDescription)")
+            }
+        }
+         ```
+ - Login Screen
+      - (Update/PUT) input user information to login
+         ```swift
+        user.username = usernameField.text!
+        user.password = passwordField.text!
+        PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
+            if user != nil {
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            } else {
+                print("Error:\(error!.localizedDescription)")
+                
+            }
+        }
+         ``` 
+ - Home Screen
+      - (Read/GET) Query current forecast of the user's zipcode
+      - (Read/GET) Query 5-day local forecast
+ - Map Screen
+      - (Read/GET) Query weather for local major cities
+ - Settings Screen
+      - (Update/PUT) Change user's zipcode
+        ```swift
+        let user = PFUser()
+        user.zipcode = zipcode.text
+        PFUser.changeZipCode { (success, error) in
+        // check if zip code is valid or not
+            if success {
+                self.performSegue(withIdentifier: "zipCodeChangeSegue", sender: nil)
+                // will segue to main screen upon success with forecast of the given zipcode
+            } else {
+                print("Error, invalid zipcode:\(error!.localizedDescription)")
+                // will print an error and allow to enter a correct zip code
+            }
+        }
+         ``` 
+      - (Update/PUT) Change preferred degree scale, either Celsius or Fahrenheit
 
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
+##### API Of Open Weather
+- Base URL - [api.openweathermap.org/data/2.5](api.openweathermap.org/data/2.5)
+
+   HTTP Verb | Endpoint | Description
+   ----------|----------|------------
+    `GET`    | /forecast?zip=zip code | get 5 day/3-hour forecast based on zip code
+    `GET`    | /weather?zip=zip code | get weather data based on zip code
+    `GET`    | /weather?units=unit | get different units of measurement 
+    
+##### API Of Open Weather Maps 1.0
+- Base URL - [https://tile.openweathermap.org](https://tile.openweathermap.org)
+   
+   HTTP Verb | Endpoint | Description
+   ----------|----------|------------
+    `GET`    | /map     | weather map including precipitation, clouds, pressure, temp, wind based on user's zipcode
+
+##### Open Weather Geocoding API
+- Base URL - [http://api.openweathermap.org/geo/1.0](http://api.openweathermap.org/geo/1.0)
+ 
+   HTTP Verb | Endpoint | Description
+   ----------|----------|------------
+    `GET`    | /zip?zip=zip code | convert zip to longitude and latitude coordinates

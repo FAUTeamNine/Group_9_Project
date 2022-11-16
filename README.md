@@ -36,7 +36,7 @@ Original App Design Project - README Template
 
 - [X] Set Up the intitial Xcode project with dependencies  
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif](https://media4.giphy.com/media/SmNKm3eJuL7UIcpT6H/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://media4.giphy.com/media/SmNKm3eJuL7UIcpT6H/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 - [X] Set up the parse server and add the necessary memebers
 

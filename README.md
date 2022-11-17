@@ -34,20 +34,28 @@ Original App Design Project - README Template
 
 **Required Must-have Stories**
 
-- Users can logIn
-- Users can signUp
-- Users LogOut
-- Users can input a zip code
-- users can see the current weather, forecast, heat index, times
-- user can change the settings change zip, forecast, etc
-- users can see a list of cities and their forecast
+- [X] Set Up the intitial Xcode project with dependencies  
+
+<img src='https://media1.giphy.com/media/IPwmYJYRk85BWEGff7/giphy.gif?cid=790b761127a1032adc002ed92a72558e10c6327715aa372f&rid=giphy.gif&ct=g' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+- [X] Set up the parse server and add the necessary memebers
+
+<img src='https://media4.giphy.com/media/SmNKm3eJuL7UIcpT6H/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+- [ ] Users can log in
+- [ ] Users can sign up
+- [ ] Users log out
+- [ ] Users can input a zip code
+- [ ] Users can see the current weather, forecast, heat index, times
+- [ ] User can change the settings change zip, forecast, etc
+- [ ] Users can see a list of cities and their forecast
 
 **Optional Nice-to-have Stories**
 
-- users can search using city names or zip code
-- add a map
-- map tracks the user
-- animated background for detail page
+- [ ] users can search using city names or zip code
+- [ ] add a map
+- [ ] map tracks the user
+- [ ] animated background for detail page
 
 ### 2. Screen Archetypes
 

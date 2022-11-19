@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		068A42816485EF961F95DC4E /* Pods_Rainy_RainyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9863F94AD3F6BDF62B09D07 /* Pods_Rainy_RainyUITests.framework */; };
+		1F7C8519292967180074B435 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7C8518292967180074B435 /* LoginViewController.swift */; };
+		1F7C851B292967730074B435 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7C851A292967730074B435 /* HomeViewController.swift */; };
+		1F7C851E292969480074B435 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 1F7C851D292969480074B435 /* AlamofireImage */; };
 		411CE75D23E25C8E02FAA3A6 /* Pods_Rainy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 241F9C4ADAEDEB19863C413B /* Pods_Rainy.framework */; };
 		5D4878C82921957E006994AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4878C72921957E006994AC /* AppDelegate.swift */; };
 		5D4878CA2921957E006994AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4878C92921957E006994AC /* SceneDelegate.swift */; };
-		5D4878CC2921957E006994AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4878CB2921957E006994AC /* ViewController.swift */; };
 		5D4878CF2921957E006994AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D4878CD2921957E006994AC /* Main.storyboard */; };
 		5D4878D129219584006994AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D4878D029219584006994AC /* Assets.xcassets */; };
 		5D4878D429219584006994AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D4878D229219584006994AC /* LaunchScreen.storyboard */; };
@@ -39,12 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F7C8518292967180074B435 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1F7C851A292967730074B435 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		241F9C4ADAEDEB19863C413B /* Pods_Rainy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rainy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35578B6C0DC84A17AB9D6B09 /* Pods-RainyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainyTests.release.xcconfig"; path = "Target Support Files/Pods-RainyTests/Pods-RainyTests.release.xcconfig"; sourceTree = "<group>"; };
 		5D4878C42921957E006994AC /* Rainy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rainy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D4878C72921957E006994AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D4878C92921957E006994AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5D4878CB2921957E006994AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5D4878CE2921957E006994AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5D4878D029219584006994AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D4878D329219584006994AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -69,6 +72,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				411CE75D23E25C8E02FAA3A6 /* Pods_Rainy.framework in Frameworks */,
+				1F7C851E292969480074B435 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,11 +122,12 @@
 			children = (
 				5D4878C72921957E006994AC /* AppDelegate.swift */,
 				5D4878C92921957E006994AC /* SceneDelegate.swift */,
-				5D4878CB2921957E006994AC /* ViewController.swift */,
 				5D4878CD2921957E006994AC /* Main.storyboard */,
 				5D4878D029219584006994AC /* Assets.xcassets */,
 				5D4878D229219584006994AC /* LaunchScreen.storyboard */,
+				1F7C8518292967180074B435 /* LoginViewController.swift */,
 				5D4878D529219584006994AC /* Info.plist */,
+				1F7C851A292967730074B435 /* HomeViewController.swift */,
 			);
 			path = Rainy;
 			sourceTree = "<group>";
@@ -185,6 +190,9 @@
 			dependencies = (
 			);
 			name = Rainy;
+			packageProductDependencies = (
+				1F7C851D292969480074B435 /* AlamofireImage */,
+			);
 			productName = Rainy;
 			productReference = 5D4878C42921957E006994AC /* Rainy.app */;
 			productType = "com.apple.product-type.application";
@@ -260,6 +268,9 @@
 				Base,
 			);
 			mainGroup = 5D4878BB2921957E006994AC;
+			packageReferences = (
+				1F7C851C292969480074B435 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = 5D4878C52921957E006994AC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -406,9 +417,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D4878CC2921957E006994AC /* ViewController.swift in Sources */,
+				1F7C8519292967180074B435 /* LoginViewController.swift in Sources */,
 				5D4878C82921957E006994AC /* AppDelegate.swift in Sources */,
 				5D4878CA2921957E006994AC /* SceneDelegate.swift in Sources */,
+				1F7C851B292967730074B435 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -754,6 +766,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1F7C851C292969480074B435 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1F7C851D292969480074B435 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F7C851C292969480074B435 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5D4878BC2921957E006994AC /* Project object */;
 }

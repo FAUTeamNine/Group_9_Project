@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  ZipcodeViewController.swift
 //  Rainy
 //
 //  Created by Garry Florestal on 11/19/22.
@@ -7,32 +7,33 @@
 
 import UIKit
 import Parse
+class ZipcodeViewController: UIViewController {
 
-class LoginViewController: UIViewController {
-
-    @IBOutlet weak var passwordField: UITextField!
-    @IBOutlet weak var usernameField: UITextField!
+   
+    @IBOutlet weak var passwordBox: UITextField!
+    @IBOutlet weak var usernameBox: UITextField!
+    @IBOutlet weak var zipcodeField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func onSignUp(_ sender: Any) {
-        self.performSegue(withIdentifier: "signUpSegue", sender: nil)
-    }
-    @IBAction func onLogin(_ sender: Any) {
-        let username = usernameField.text!
-        let password = passwordField.text!
-        PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
-            if user != nil {
-                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+    @IBAction func onZipSignUp(_ sender: Any) {
+        let user = PFUser()
+        user.username = usernameBox.text
+        user.password = passwordBox.text
+        user["zipcode"] = zipcodeField.text
+        user.signUpInBackground { (success, error) in
+            if success {
+                self.performSegue(withIdentifier: "zipcodeSegue", sender: nil)
             } else {
                 print("Error:\(error!.localizedDescription)")
-                
             }
         }
+        
     }
+    
     /*
     // MARK: - Navigation
 

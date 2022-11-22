@@ -12,6 +12,8 @@
 		1F7C851B292967730074B435 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7C851A292967730074B435 /* HomeViewController.swift */; };
 		1F7C851E292969480074B435 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 1F7C851D292969480074B435 /* AlamofireImage */; };
 		1F7C85202929739A0074B435 /* ZipcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7C851F2929739A0074B435 /* ZipcodeViewController.swift */; };
+		27B009A0292D7E76005463AF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B0099F292D7E76005463AF /* MapViewController.swift */; };
+		27B009A2292D7E8C005463AF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B009A1292D7E8C005463AF /* SettingsViewController.swift */; };
 		411CE75D23E25C8E02FAA3A6 /* Pods_Rainy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 241F9C4ADAEDEB19863C413B /* Pods_Rainy.framework */; };
 		5D4878C82921957E006994AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4878C72921957E006994AC /* AppDelegate.swift */; };
 		5D4878CA2921957E006994AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4878C92921957E006994AC /* SceneDelegate.swift */; };
@@ -46,6 +48,8 @@
 		1F7C851A292967730074B435 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1F7C851F2929739A0074B435 /* ZipcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipcodeViewController.swift; sourceTree = "<group>"; };
 		241F9C4ADAEDEB19863C413B /* Pods_Rainy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rainy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27B0099F292D7E76005463AF /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		27B009A1292D7E8C005463AF /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		35578B6C0DC84A17AB9D6B09 /* Pods-RainyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainyTests.release.xcconfig"; path = "Target Support Files/Pods-RainyTests/Pods-RainyTests.release.xcconfig"; sourceTree = "<group>"; };
 		5D4878C42921957E006994AC /* Rainy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rainy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D4878C72921957E006994AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +135,8 @@
 				5D4878D529219584006994AC /* Info.plist */,
 				1F7C851A292967730074B435 /* HomeViewController.swift */,
 				1F7C851F2929739A0074B435 /* ZipcodeViewController.swift */,
+				27B0099F292D7E76005463AF /* MapViewController.swift */,
+				27B009A1292D7E8C005463AF /* SettingsViewController.swift */,
 			);
 			path = Rainy;
 			sourceTree = "<group>";
@@ -421,6 +427,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F7C8519292967180074B435 /* LoginViewController.swift in Sources */,
+				27B009A0292D7E76005463AF /* MapViewController.swift in Sources */,
+				27B009A2292D7E8C005463AF /* SettingsViewController.swift in Sources */,
 				5D4878C82921957E006994AC /* AppDelegate.swift in Sources */,
 				5D4878CA2921957E006994AC /* SceneDelegate.swift in Sources */,
 				1F7C85202929739A0074B435 /* ZipcodeViewController.swift in Sources */,

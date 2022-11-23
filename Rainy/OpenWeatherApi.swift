@@ -13,7 +13,7 @@ class OpenWeather {
     var weather = [[String:Any]]()
     
     static func getLocalWeather(zipCode: Int, success: @escaping ([String:Any]) -> ()){
-        let rawURL = "https://api.openweathermap.org/data/2.5/weather?zip=\(zipCode)&appid=\(apiKey)"
+        let rawURL = "https://api.openweathermap.org/data/2.5/weather?zip=\(zipCode)&appid=\(apiKey)&units=imperial"
         guard let url = URL(string: rawURL) else {
             print ("[ERROR]There was an issue with URL")
             return

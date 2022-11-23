@@ -15,6 +15,13 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        SAMPLE CODE ON HOW TO CALL THE LOCAL WEATHER API METHOD
+        
+//        OpenWeather.getLocalWeather(zipCode: 33071, success: { data in
+//            print("\n\n\n", data)
+//        })
+//
+//
         // Do any additional setup after loading the view.
     }
     

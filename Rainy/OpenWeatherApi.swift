@@ -9,8 +9,6 @@ import Foundation
 
 class OpenWeather {
     
-    var onSuccess: (() -> ())?
-    var onError: ((Error) -> ())?
     static let apiKey: String = "b99c8417a38cd552c8fda11f22bbb202"
     
     static func getLocalWeather(zipCode: Int){
@@ -19,6 +17,10 @@ class OpenWeather {
             print ("[ERROR]There was an issue with URL")
             return
         }
+        
+        print(rawURL)
+        
+        
         
         
         

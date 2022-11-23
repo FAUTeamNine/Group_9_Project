@@ -47,7 +47,9 @@ Original App Design Project - README Template
 <img src= 'https://imgur.com/3uWrRrJ.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 - [X] Users can sign up
+
 <img src= 'https://imgur.com/N4bVGXe.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 - [ ] Users log out
 - [ ] Users can input a zip code
 - [ ] Users can see the current weather, forecast, heat index, times

@@ -17,11 +17,14 @@ class LoginViewController: UIViewController {
         
 //        SAMPLE CODE ON HOW TO CALL THE LOCAL WEATHER API METHOD
         
+        let weather = OpenWeather()
 //        OpenWeather.getLocalWeather(zipCode: 33071, success: { data in
 //            print("\n\n\n", data)
 //        })
 //
 //
+        print(weather.getForecast(zipCode: 33071))
+        
         // Do any additional setup after loading the view.
     }
     

@@ -9,10 +9,12 @@ import Foundation
 
 class OpenWeather {
     
-    static let apiKey: String = "b99c8417a38cd552c8fda11f22bbb202"
+    let apiKey: String = "b99c8417a38cd552c8fda11f22bbb202"
+    let group = DispatchGroup()
     var weather = [[String:Any]]()
+
     
-    static func getLocalWeather(zipCode: Int, success: @escaping ([String:Any]) -> ()){
+    func getLocalWeather(zipCode: Int, success: @escaping ([String:Any]) -> ()){
         let rawURL = "https://api.openweathermap.org/data/2.5/weather?zip=\(zipCode)&appid=\(apiKey)&units=imperial"
         guard let url = URL(string: rawURL) else {
             print ("[ERROR]There was an issue with URL")
@@ -41,4 +43,45 @@ class OpenWeather {
         
     }
     
+    func getCoordinates(zipCode: Int) -> [Int]{
+        
+        var lat = Int()
+        var lon = Int()
+        var coordinates: [Int] = []
+        group.enter()
+        
+        DispatchQueue.global().async{
+        
+        self.getLocalWeather(zipCode: zipCode, success: {rawData in
+            
+            let data = rawData["coord"] as! [String: Any]
+            lat = Int(data["lat"] as! Double)
+            lon = Int(data["lon"] as! Double)
+            self.group.leave()
+            
+        })
+        
+    }
+       
+        group.wait()
+        
+        coordinates.append(lat)
+        coordinates.append(lon)
+        
+        return coordinates
+        
+    }
+    
+    func getForecast(zipCode: Int){
+        
+        var forecast = [[String: Any]]()
+        var coordinates = [Int]()
+        
+        coordinates = self.getCoordinates(zipCode: zipCode)
+        
+        
+        
+        
+        
+    }
 }

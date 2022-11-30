@@ -17,17 +17,28 @@ class LoginViewController: UIViewController {
         
 //        SAMPLE CODE ON HOW TO CALL THE LOCAL WEATHER API METHOD
         
-        let weather = OpenWeather()
+        //Intizilaize the method
+//        let weather = OpenWeather()
+        
+//        //GET LOACAL WEATHER
+//        // parameters:
+//        //   zipCode : Int
+//        //   Success : CallBack func of return type void
+        
 //        OpenWeather.getLocalWeather(zipCode: 33071, success: { data in
 //            print("\n\n\n", data)
 //        })
 //
 //
-        weather.getForecast(zipCode: 33071, success: { data in
-            print("\n\n\n", data[4])
-        })
+//        //GET FORECAST
+//        // parameters:
+//        //   zipCode : Int
+//        //   Success : CallBack func of return type void
         
-        // Do any additional setup after loading the view.
+//        weather.getForecast(zipCode: 33071, success: { data in
+//            print("\n\n\n", data[4])
+//        })
+//
     }
     
     @IBAction func onSignUp(_ sender: Any) {

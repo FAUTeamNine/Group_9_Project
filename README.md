@@ -53,6 +53,11 @@ Original App Design Project - README Template
 - [ ] Users log out
 - [x] Users can input a zip code
 - [ ] Users can see the current weather, forecast, heat index, times
+  
+  API Calls
+  
+  <img src= 'https://media3.giphy.com/media/HaL3wmLdbFFffQq6QV/giphy.gif?cid=790b7611e7cf2d21606788e463ac99ec124fcd48be83b6db&rid=giphy.gif&ct=g' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 - [ ] User can change the settings change zip, forecast, etc
 - [ ] Users can see a list of cities and their forecast
 

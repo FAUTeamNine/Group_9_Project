@@ -23,7 +23,9 @@ class LoginViewController: UIViewController {
 //        })
 //
 //
-        print(weather.getForecast(zipCode: 33071))
+        weather.getForecast(zipCode: 33071, success: { data in
+            print("\n\n\n", data[4])
+        })
         
         // Do any additional setup after loading the view.
     }

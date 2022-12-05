@@ -56,6 +56,10 @@
                                 <connections>
                                     <action selector="onLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NZG-I9-ugN"/>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+                                    <segue destination="SVf-Nx-O38" kind="presentation" identifier="loginSegue" id="JDq-5v-IAU"/>
+>>>>>>> Stashed changes
 =======
                                     <segue destination="SVf-Nx-O38" kind="presentation" identifier="loginSegue" id="JDq-5v-IAU"/>
 >>>>>>> Stashed changes
@@ -188,6 +192,10 @@
                                 <connections>
                                     <action selector="onZipSignUp:" destination="Wcy-1s-5xv" eventType="touchUpInside" id="BMz-N8-sTP"/>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+                                    <segue destination="SVf-Nx-O38" kind="presentation" identifier="zipcodeSegue" id="hfb-9s-kpu"/>
+>>>>>>> Stashed changes
 =======
                                     <segue destination="SVf-Nx-O38" kind="presentation" identifier="zipcodeSegue" id="hfb-9s-kpu"/>
 >>>>>>> Stashed changes

@@ -55,7 +55,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Log In"/>
                                 <connections>
                                     <action selector="onLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NZG-I9-ugN"/>
-                                    <segue destination="SVf-Nx-O38" kind="presentation" identifier="loginSegue" customClass="loginSegue" customModule="Rainy" customModuleProvider="target" id="JDq-5v-IAU"/>
+                                    <segue destination="SVf-Nx-O38" kind="presentation" identifier="loginSegue" id="JDq-5v-IAU"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't Have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygb-L5-DD0">
@@ -183,7 +183,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
                                 <connections>
                                     <action selector="onZipSignUp:" destination="Wcy-1s-5xv" eventType="touchUpInside" id="BMz-N8-sTP"/>
-                                    <segue destination="SVf-Nx-O38" kind="presentation" identifier="zipcodeSegue" customClass="zipcodeSegue" customModule="Rainy" customModuleProvider="target" id="hfb-9s-kpu"/>
+                                    <segue destination="SVf-Nx-O38" kind="presentation" identifier="zipcodeSegue" id="hfb-9s-kpu"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="249" image="umbrella.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zHT-OY-9aT">
@@ -455,7 +455,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="JDq-5v-IAU"/>
+        <segue reference="hfb-9s-kpu"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="gearshape" catalog="system" width="128" height="123"/>

@@ -6,13 +6,24 @@
 //
 
 import UIKit
+import WebKit
 
-class MapViewController: UIViewController {
-
+class MapViewController: UIViewController, WKNavigationDelegate {
+    
+    
+    @IBOutlet var webView: WKWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let url = URL(string: "https://openweathermap.org/weathermap?basemap=map&cities=true&layer=clouds&lat=26.2435&lon=-80.2601&zoom=10")!
+        
+        webView.load(URLRequest(url: url))
+        
+        let jsScript = WKUserScript(source: "document.getElementById(\"nav-website\").style.display = \"none\"; document.getElementById(\"map\").style.top=0", injectionTime: .atDocumentEnd, forMainFrameOnly: false)
+        webView.configuration.userContentController.addUserScript(jsScript)
+        
+        
+        // Do any   additional setup after loading the view.
     }
     
 

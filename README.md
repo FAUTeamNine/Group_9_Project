@@ -50,21 +50,36 @@ Original App Design Project - README Template
 
 <img src= 'https://imgur.com/N4bVGXe.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
+- [x] Users can see app logo and app launch screen
+
+App logo and launch screen
+
+<img src= 'https://media1.giphy.com/media/enLmsA9HMrkULbKwhv/giphy.gif?cid=790b76114d0cdec40bfacf01c185ad0fa8bae1363aac7609&rid=giphy.gif&ct=g' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 - [ ] Users log out
 - [x] Users can input a zip code
 - [ ] Users can see the current weather, forecast, heat index, times
+- [ ] User can change the settings change zip, forecast, etc
+
+Progress on the main view and settings 
+
+<img src= 'https://media4.giphy.com/media/mNVLnxNNPczMSDkYhY/giphy.gif?cid=790b7611228e068e6764a744058c5305f3b7d41cf60e95e8&rid=giphy.gif&ct=g' title='Video Walkthrough' width='' alt='Video Walkthrough' />
   
-  API Calls
+API Calls
   
   <img src= 'https://media3.giphy.com/media/HaL3wmLdbFFffQq6QV/giphy.gif?cid=790b7611e7cf2d21606788e463ac99ec124fcd48be83b6db&rid=giphy.gif&ct=g' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-- [ ] User can change the settings change zip, forecast, etc
 - [ ] Users can see a list of cities and their forecast
 
 **Optional Nice-to-have Stories**
 
 - [ ] users can search using city names or zip code
 - [ ] add a map
+
+Progress on the map
+
+<img src= 'https://media2.giphy.com/media/AkxdJ1aWiWKxCgGGzd/giphy.gif?cid=790b76117f39a148dcd2c144b481f71c8d4a09b24eaf0c10&rid=giphy.gif&ct=g' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 - [ ] map tracks the user
 - [ ] animated background for detail page
 

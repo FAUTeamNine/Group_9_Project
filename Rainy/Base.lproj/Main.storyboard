@@ -351,6 +351,15 @@
                                 <rect key="frame" x="75" y="311" width="240" height="128"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbM-ye-2Lc">
+                                <rect key="frame" x="167" y="504" width="58" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Map"/>
+                                <connections>
+                                    <segue destination="iiQ-SL-xw9" kind="show" id="fbY-Q8-NNz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7e0-gy-aRW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -523,13 +532,14 @@
                             <constraint firstAttribute="bottom" secondItem="yWV-6c-Oei" secondAttribute="bottom" id="qhN-T6-8Mj"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="eoT-6T-2an"/>
                     <connections>
                         <outlet property="webView" destination="yWV-6c-Oei" id="9YU-kd-8uZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hvR-JC-MCh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="41.53846153846154" y="-696.6824644549763"/>
+            <point key="canvasLocation" x="1328" y="3018"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
